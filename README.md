@@ -1,1 +1,0 @@
-# responsive-blog-post-assignment
