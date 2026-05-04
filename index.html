@@ -1,111 +1,86 @@
 <DOCTYPE html>
 <head>
   <title>Responsive Blog Post Assignment</title>
-  <link rel="stylesheet" href="main_style.css"> <!--need to figure out how to put two in and do the media queries things-->
+  <link rel="stylesheet" type="text/CSS" media="(min-device-aspect-ratio:10/9)" href="CSS/main_style.css"/>
+  <link rel="stylesheet" type="text/CSS" media="(max-device-aspect-ratio:1/1)" href="mobile.css"/>
+  <link rel="stylesheet" type="text/CSS" media="print" href="CSS/print_style.css"/> 
 </head>
 <body>
-  <style>
-    h1, h2 {
-      position:relative;
-      left: 45%;
-    }
-    div.div1 {
-      max-width: 100%;
-      background-color: red;
-    }
-    div.div2 {
-      max-width: 100%;
-      background-color: orange;
-    }
-    div.div3 {
-      background-color: yellow;
-      <!--taking out max-width: 40%;-->
-      float: left;
-    }
-    div.div4 {
-      max-width: 100%%;
-      background-color: green;
-    }
-    div.div5 {
-      <!--taking out max-width: 40%;. you know, it might just be easier to make a css grid or flexbox to replace the div 9 and div 6 so just have columns/such-->
-      background-color: blue;
-      float:right;
-    }
-    div.div6 {
-      max-width: 100%;
-      background-color: purple;
-    }
-    div.div7 {
-      max-width: 60%;
-      background-color: pink;
-      float: left;
-    }
-    div.div8 {
-      max-width: 40%;
-      background-color: teal;
-      float:right;
-    }
-    div.div9 {
-      background-color: LightBlue;
-      max-width: 100%;
-    }
-  </style>
-  
-  <h1>Baking Blog:</h1>
-  <h2>Best Chocolate Chip Cookies - Recipe</h2>
-  <div class="div1">
-    <p>(original recipe submitted by Dora on <a href="https://www.allrecipes.com/" target="_blank">allrecipes.com</a></p>
-    <p>Soft, chewy cookies with crispy edges, filled with delicious chocolate chips!</p>
-  </div>
-  
-  </br>
-  
-  <div class="div2">
-    <p>Personal rating: 
-      <ul></ul> <!-- change ul bullet point into star as custom image? or can use stars as image. -->
-  </p>
-    <p>print</p>
-  </div>
-
-  </br>
-
-  <div class="div9">
-    <div class="div3">
-      <div class="div4">
-      <p>Recipe yields 4 dozen cookies (48 servings) </br>
-  1 serving = 1 cookie.</p>
-      </div>
-      <img .../>
-    </div>
-
-    <div class="div5">
-    <h3>Ingredients</h3>
-      <ul>
-        <li>1 cup butter (softened)</li>
-        <li>1 cup white sugar</li>
-        <li>1 cup brown sugar (packed)</li>
-        <li>2 large eggs</li>
-        <li>2 tsp vanilla extract</li>
-        <li>1 tsp baking soda</li>
-        <li>2 tsp hot water</li>
-        <li>1/2 tsp salt</li>
-        <li>3 cups all-purpose flour</li>
-        <li>2 cups semisweet chocolate chips</li>
-        <li>1 cup chopped walnuts (optional)</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="div class="div6">
-    <h3>Directions</h3>
-    <div class="div7">
-      <h4>Step 1</h4>
-      <p>directions for  step one go here and such.</p>
-    </div>
-
-    <div class="div8">
-       <img />
-    </div>
-  </div>
+	<div class="navBar">
+		<div class="navItem"><a href="sample-link" target="_self">Previous Post</a></div>
+		<div class="navItem"><a href="sample-link" target="_self">Home</a></div>
+		<div class="navItem"><a href="sample-link" target="_self">Next</a></div>
+	</div>
+	<div class="title">
+		<h1>Baking Blog: Best Chocolate Chip Cookies - Recipe</h1>
+		<h1 class="printing">Best Chocolate Chip Cookies</h1>
+	</div>
+	<div class="div1">
+		<p>(original recipe submitted by Dora on <a href="https://www.allrecipes.com/" target="_blank" class="external_link">allrecipes.com</a>)</p>
+		<p>Soft, chewy cookies with crispy edges, filled with delicious chocolate chips! This is the best recipe for chocolate chip cookies!..
+			(Just be careful not to overmix it...)</p>
+	</div>
+	<div class="div2">
+		<p>Personal rating: <img src="Images/star.png" class="stars"/><span class="print">(Print by double clicking and selecting the "print" option)</span></p>
+	</div>
+	<div class="div3">
+		<div class="div4">
+			<p>Recipe yields 4 dozen cookies (48 servings)</br>
+				1 serving = 1 cookie</br>
+				cook time: 10 mins</br>
+				prep time: 20 mins</p>
+		</div>
+		<img src="Images/image11.jpg" alt="a plate of cookies"/>
+		<div class="div5">
+			<h3>Ingredients</h3>
+			<ul>
+				<li>1 cup butter (softened)</li>
+				<li>1 cup white sugar</li>
+				<li>1 cup brown sugar (packed)</li>
+				<li>2 large eggs</li>
+				<li>2 tsp vanilla extract </br>
+					(I like to add 1 tsp of </br>
+					almond extract as well, </br>
+					it really compliments </br>
+					the vanilla - I let mine</br>
+					sit together in a bowl to</br>
+					meld the flavors for a few</br>
+					mins first)</li>
+				<li>1 tsp baking soda</li>
+				<li>2 tsp hot water</li>
+				<li>1/2 tsp salt</li>
+				<li>3 cups all-purpose flour</li>
+				<li>2 cups semisweet chocolate chips</li>
+				<li>1 cup chopped walnuts (optional)</li>
+			</ul>
+		</div>
+	</div>
+	</br>
+	</br>
+	<div class="div6">
+		<div class="directions">
+			<h2>Directions</h2>
+			<h4>Step 1</h4>
+			<p>First, preheat your oven to 350 degrees Fahrenheit. Now gather your ingredients. Then combine your sugars and butter in a bowl until your mixture is creamy and smooth.</p>
+			<h4>Step 2</h4>
+			<p>Next, beat in the eggs and add vanilla. (If you're using almond extract as well, I put mine in with the vanilla.)</p>
+			<h4>Step 3</h4>
+			<p>Now add the baking soda once it's dissolved in the hot water, and also add your salt. Mix until combined.</p>
+			<h4>Step 4</h4>
+			<p>Slowly add flour and mix until a soft dough forms, then add in your chocolate chips (and walnuts).</p>
+			<h4>Step 5</h4>
+			<p>Roll bits of the cookie dough into small balls, and place them on baking sheets or parchment paper.</p>
+			<h4>Step 6</h4>
+			<p>Bake in preheated oven until the cookies' edges are a light brown, about 10 minutes.<--I bake them anywhere between 10-12 mins</p>
+			<h4>Step 7</h4>
+			<p>Once your cookies have cooled enough for you to move them, place them on a wire rack to cool completely. Then enjoy!</p>
+		</div>
+		<div class="images">
+			<img src="Images/image1.jpg" class="img_step" alt="ingredients laid out"/>
+			<img src="Images/image7.jpg" class="img_step" alt="soft dough"/>
+			<img src="Images/image8.jpg" class="img_step" alt="dough with chocolate chips mixed in"/>
+			<img src="Images/image13.jpg" class="img_step" alt="cookies cooling on a rack"/>
+		</div>
+	</div>
 </body>
 </html>
