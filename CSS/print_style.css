@@ -1,0 +1,142 @@
+@media print {
+	/********* General Styles & Links *********/
+
+	body {
+		font-family: 'Times New Roman', serif;
+	}
+	h1 {
+		padding-top:15%;
+		display:none;
+	}
+	.printing {
+		display: block;
+	}
+	.external_link:link {
+		color: lightgreen;
+	}
+	a:link {
+		color: brown;
+	}
+	
+	
+	/********* Images *********/
+
+	img {
+		max-width: 30%;
+		padding-left: 15%;
+		height:auto;
+		display: none;
+	}
+	img.stars {
+		padding-left:1%;
+	}
+	.img_step {
+		max-width:60%;
+		height:auto;
+		padding-bottom: 5%;
+	}
+
+	/********* Nav Bar *********/
+
+	.navBar {
+		background-color:beige;
+		max-width:100%;
+		position:fixed;
+		padding:0.5%;
+		display:none;
+	}
+	div.navBar {
+		display:table;
+		width:100%;
+		display:none;
+	}
+	div.navItem {
+		display:table-cell;
+		vertical-align:middle;
+		padding:1% 0.5%;
+		text-align:center;
+		font-weight:bold;
+		font-size:1.5em;
+		display:none;
+	}
+
+
+	/********* Divs/Sectioning *********/
+
+	/*** Head Section/Title ***/
+	div.title {
+		max-width: 60%;
+		margin:auto;
+	}
+	/*** end of Head Section ***/
+
+	div.div1 {
+		max-width: 60%;
+		margin:auto;
+		font-size: 1.2em;
+		display:none;
+	}
+	div.div2 {
+		max-width: 70%;
+		margin:auto;
+		font-size: 1.1em;
+		display:none;
+	}
+	
+	/*** Float "Print" right ***/
+
+	.print {
+		float: right;
+		font-size:1.2em;
+	}
+
+	/*** end of float right - more divs ***/
+
+	div.div3 {
+		float: left;
+		font-size: 1.1em;
+	}
+	div.div3 p {
+		float: right;
+	}
+	div.div4 {
+		max-width: 40%;
+		font-weight:bold;
+	}
+	
+	/*** Ingredients Section ***/
+	div.div5 {
+		float: right;
+		padding-right: 15%;
+		margin:5%;
+		font-size: 1em;
+	}
+	div.div5 li {
+		margin-bottom: 2%;
+	}
+	/*** end of Ingredients Section ***/
+
+	/*** Directions Section ***/
+	div.div6 {
+		max-width: 100%;
+		font-size: 1em;
+		padding-top:20%;
+		padding-left:5%;
+		padding-right:5%;
+		position:absolute;
+		top:-2%;
+	}
+
+	/*** holds written directions ***/
+	div.directions {
+		max-width:55%;
+		float:right;
+	}
+
+	/*** holds images for directions ***/
+	div.images {
+		max-width:40%;
+		float:right;
+		display:none;
+	}
+}
